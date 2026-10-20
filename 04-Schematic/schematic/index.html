@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#schematic" class="md-skip">
           Skip to content
         </a>
       
@@ -604,6 +604,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -632,6 +634,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -649,9 +653,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -792,6 +796,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -809,9 +815,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -840,23 +846,20 @@
   
 
 
-  <h1>Schematic</h1>
-
+<h1 id="schematic">Schematic</h1>
 <h2 id="overview">Overview</h2>
-<p>This schematic is design to support .... (highlight functionally, power, and controller).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Screenshot.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../Screenshot.png" style="style" width:_350_="width:&quot;350&quot;"></a>
-<strong>Figure ##:</strong> Showing a example schematic.</p>
-<h2 id="resouces">Resouces</h2>
-<p>The schematic as a PDF download is available <a href="../ExampleSchematic.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../dummyZip.zip"><em>here</em></a>.</p>
+<p>This schematic is designed to support the pressure pad subsystem for the interactive cat toy. The FSR01CE pressure sensor detects applied pressure and produces a variable resistance that is converted into an analog voltage using a voltage divider. An MCP6004 operational amplifier buffers the sensor signal, which is then passed through a low-pass filter before being measured by the RA0 analog input of the PIC18F57Q43 Curiosity Nano.</p>
+<p>The subsystem is powered from a 9–12 V DC input and uses an MC7805CTG linear voltage regulator to provide a regulated 5 V supply. The schematic also includes a debugging LED, a debounced pushbutton, test points, spare GPIO connections, and an 8-pin ribbon cable interface for communication with the other subsystems.</p>
+<p height:_auto_="height:&quot;auto&quot;" style="style" width:_700_="width:&quot;700&quot;"></p>
+<p><strong>Figure 1:</strong> Pressure pad subsystem schematic.</p>
+<h2 id="resources">Resources</h2>
+<p>The schematic as a PDF download is available <a href="../Individual%20subsystem.pdf">here</a>, and the ZIP folder of the KiCad project is available <a href="../Individual%20subsystem.zip">here</a>.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
