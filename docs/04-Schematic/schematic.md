@@ -9,8 +9,8 @@ The subsystem is powered from a 9–12 V DC input and uses an MC7805CTG linear v
 ![Pressure Pad Subsystem Schematic](Screenshot.png)
 {style width:"700" height:"auto"}
 
-**Figure 1:** Pressure pad subsystem schematic.
-Schematic is here
+**Figure 1:** Pressure pad subsystem schematic.Schematic is here
+
 ## Resources
 
 The schematic as a PDF download is available [here](Individual%20subsystem.pdf), and the ZIP folder of the KiCad project is available [here](Individual%20subsystem.zip).
