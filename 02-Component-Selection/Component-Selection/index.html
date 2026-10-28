@@ -587,6 +587,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#h-bridge-motor-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      H-Bridge Motor Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dc-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      DC Motor
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -859,6 +877,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#h-bridge-motor-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      H-Bridge Motor Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dc-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      DC Motor
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1006,6 +1042,68 @@
 </table>
 <p><strong>Choice:</strong> Option 1: PJ-202A</p>
 <p><strong>Rationale:</strong> The PJ-202A was selected because its through-hole construction provides a strong mechanical connection to the PCB and its right-angle orientation allows convenient access from the edge of the board. Its 5.5 mm outer diameter and 2.1 mm center-pin configuration provides a practical connection for an external DC power adapter. Its electrical ratings also provide substantial margin over the requirements of the pressure-pad subsystem. Compared with the other two options, the PJ-202A provides the preferred 2.1 mm center-pin connection for the planned external power supply.</p>
+<hr>
+<h2 id="h-bridge-motor-driver">H-Bridge Motor Driver</h2>
+<p><em>Table 5: H-Bridge Motor Driver Selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SN754410NE.png" data-desc-position="bottom"><img alt="" src="../SN754410NE.png"></a><br><strong>Option 1</strong><br>SN754410NE<br>Texas Instruments<br>Quadruple Half-H Motor Driver<br>16-PDIP Through-Hole<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/SN754410NE/380180">DigiKey Product Page</a></td>
+<td>* Supports motor supply voltages from 4.5 V to 36 V.<br><em> Compatible with the planned 9 V motor supply.<br></em> Provides up to 1 A output current per driver.<br><em> Can provide bidirectional control of a brushed DC motor.<br></em> Through-hole 16-PDIP package simplifies manual PCB assembly.<br><em> Integrated clamp diodes provide protection when driving inductive loads.<br></em> Active component with good availability.</td>
+<td>* Bipolar output stage produces a larger voltage drop than newer MOSFET-based motor drivers.<br><em> Less efficient than modern MOSFET H-bridge drivers.<br></em> 16-pin package occupies more PCB area than smaller motor-driver ICs.<br>* Motor startup and stall current must remain within the driver's current limits.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FAN8100N.png" data-desc-position="bottom"><img alt="" src="../FAN8100N.png"></a><br><strong>Option 2</strong><br>FAN8100N<br>Fairchild Semiconductor<br>Dual H-Bridge DC Motor Driver<br>12-DIP Through-Hole<br><a href="https://www.digikey.com/en/products/detail/rochester-electronics-llc/FAN8100N/11558200">DigiKey Product Page</a></td>
+<td>* Contains two H-bridge motor-driver channels.<br><em> Supports forward, reverse, stop, and brake functions.<br></em> Through-hole package simplifies manual PCB assembly.<br><em> Compatible with microcontroller control signals.<br></em> Built-in thermal shutdown and short-circuit protection.<br>* Previously used motor-driver architecture.</td>
+<td>* 9 V is at the upper end of its recommended motor-supply range.<br><em> Provides little voltage margin when used with the planned 9 V supply.<br></em> Older component with more limited long-term availability.<br>* Motor current must remain within the driver's output-current limits.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../L293D.png" data-desc-position="bottom"><img alt="" src="../L293D.png"></a><br><strong>Option 3</strong><br>L293D<br>STMicroelectronics<br>Quadruple Half-H Motor Driver<br>16-PowerDIP Through-Hole<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L293D/634700">DigiKey Product Page</a></td>
+<td>* Supports motor supply voltages from 4.5 V to 36 V.<br><em> Compatible with the planned 9 V motor supply.<br></em> Provides bidirectional brushed DC motor control.<br><em> Through-hole PowerDIP package simplifies manual PCB assembly.<br></em> Integrated protection diodes simplify inductive-load protection.<br>* Commonly used motor-driver architecture.</td>
+<td>* Lower output-current capability than the SN754410NE.<br><em> Bipolar output stage produces voltage drop and power loss.<br></em> Provides less current margin during motor startup or stall conditions.<br>* 16-pin package occupies additional PCB area.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1: SN754410NE</p>
+<p><strong>Rationale:</strong> The SN754410NE was selected because it provides bidirectional control of a brushed DC motor while operating comfortably from the planned 9 V motor supply. Its 4.5 V to 36 V motor-supply range provides significantly more voltage margin than the FAN8100N, which reaches the upper end of its recommended motor-supply range at 9 V. The SN754410NE also provides greater output-current capability than the L293D. Its through-hole 16-PDIP package is appropriate for manual PCB assembly, and its integrated clamp diodes simplify protection when controlling the inductive motor load.</p>
+<hr>
+<h2 id="dc-motor">DC Motor</h2>
+<p><em>Table 6: DC Motor Selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../RF370CA-15370.png" data-desc-position="bottom"><img alt="" src="../RF370CA-15370.png"></a><br><strong>Option 1</strong><br>RF370CA-15370<br>Mabuchi Motor<br>Brushed DC Motor<br>Operating Voltage: 3 V - 12 V<br>Speed: 5600 RPM<br>Rated Torque: 2.48 mN·m<br><a href="https://www.digikey.com/en/products/detail/mabuchi-motor/RF370CA-15370/29784566">DigiKey Product Page</a></td>
+<td>* Operating-voltage range includes the planned 9 V motor supply.<br><em> Does not require a separate motor-voltage regulator.<br></em> Provides greater rated torque than the other motor options.<br><em> Lower rated speed than many similar un-geared DC motors.<br></em> Standard brushed DC construction allows simple H-bridge direction control.<br><em> Speed can be controlled using PWM.<br></em> Simple two-terminal electrical connection.</td>
+<td>* 5600 RPM is still relatively fast for direct mechanical movement.<br><em> Lower output torque than a geared motor.<br></em> Mechanical reduction may be required depending on the final cat-toy mechanism.<br>* Does not include an encoder for speed or position feedback.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../RF500TB-12560.png" data-desc-position="bottom"><img alt="" src="../RF500TB-12560.png"></a><br><strong>Option 2</strong><br>RF500TB-12560<br>Mabuchi Motor<br>Brushed DC Motor<br>Operating Voltage: 4 V - 14 V<br>Speed: 5500 RPM<br>Rated Torque: 1.79 mN·m<br><a href="https://www.digikey.com/en/products/detail/mabuchi-motor/RF500TB-12560/29784571">DigiKey Product Page</a></td>
+<td>* Operating-voltage range includes the planned 9 V motor supply.<br><em> Does not require a separate motor-voltage regulator.<br></em> Slightly lower rated speed than the other options.<br><em> Standard brushed DC motor is compatible with H-bridge direction control.<br></em> Speed can be controlled using PWM.<br>* Simple two-terminal electrical connection.</td>
+<td>* Lower rated torque than the RF370CA-15370.<br><em> Larger motor body requires more mechanical installation space.<br></em> 5500 RPM remains relatively fast for direct-drive movement.<br><em> Does not include an encoder.<br></em> Mechanical speed reduction may still be required.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FK130SH-09450.png" data-desc-position="bottom"><img alt="" src="../FK130SH-09450.png"></a><br><strong>Option 3</strong><br>FK130SH-09450<br>Mabuchi Motor<br>Brushed DC Motor<br>Operating Voltage: 6 V - 24 V<br>Speed: 7200 RPM<br>Rated Torque: 1.12 mN·m<br><a href="https://www.digikey.com/en/products/detail/mabuchi-motor/FK130SH-09450/29784565">DigiKey Product Page</a></td>
+<td>* Operating-voltage range includes the planned 9 V motor supply.<br><em> Wide operating-voltage range provides substantial voltage margin.<br></em> Compact construction simplifies mechanical installation.<br><em> Standard brushed DC motor is compatible with H-bridge control.<br></em> Speed can be controlled using PWM.<br>* Simple two-terminal connection.</td>
+<td>* Highest rated speed of the three options.<br><em> Lowest rated torque of the three options.<br></em> Lower rated power than the RF370CA-15370.<br><em> Does not include an encoder.<br></em> Mechanical reduction may be necessary for lower-speed operation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1: RF370CA-15370</p>
+<p><strong>Rationale:</strong> The RF370CA-15370 was selected because its 3 V to 12 V operating range directly includes the planned 9 V motor supply, allowing the motor to operate without an additional motor-voltage regulator. Compared with the other two options, it provides the highest rated torque while maintaining a relatively low rated speed for an un-geared DC motor. Its standard brushed DC construction allows the SN754410NE H-bridge to control motor direction, while PWM from the microcontroller can be used to control motor speed. The RF370CA-15370 therefore provides the best combination of supply-voltage compatibility, torque, speed, availability, and simple electrical integration.</p>
 
 
 
