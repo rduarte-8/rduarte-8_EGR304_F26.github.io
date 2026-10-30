@@ -605,6 +605,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#acdc-wall-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      AC/DC Wall Adapter
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -895,6 +904,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#acdc-wall-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      AC/DC Wall Adapter
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1104,6 +1122,37 @@
 </table>
 <p><strong>Choice:</strong> Option 1: RF370CA-15370</p>
 <p><strong>Rationale:</strong> The RF370CA-15370 was selected because its 3 V to 12 V operating range directly includes the planned 9 V motor supply, allowing the motor to operate without an additional motor-voltage regulator. Compared with the other two options, it provides the highest rated torque while maintaining a relatively low rated speed for an un-geared DC motor. Its standard brushed DC construction allows the SN754410NE H-bridge to control motor direction, while PWM from the microcontroller can be used to control motor speed. The RF370CA-15370 therefore provides the best combination of supply-voltage compatibility, torque, speed, availability, and simple electrical integration.</p>
+<hr>
+<h2 id="acdc-wall-adapter">AC/DC Wall Adapter</h2>
+<p><em>Table 7: AC/DC Wall Adapter Selection</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../16-00138.png" data-desc-position="bottom"><img alt="" src="../16-00138.png"></a><br><strong>Option 1</strong><br>16-00138<br>Tensility<br>9 V / 2 A AC/DC Wall Adapter<br>18 W<br>5.5 mm OD / 2.1 mm ID Right-Angle Barrel Plug<br><a href="https://www.digikey.com/en/products/detail/tensility/16-00138/10324427">DigiKey Product Page</a></td>
+<td>* Provides the required 9 V DC output.<br><em> 2 A maximum output provides sufficient current margin for the motor and supporting electronics.<br></em> 5.5 mm OD by 2.1 mm ID connector directly matches the selected PJ-202A barrel jack.<br><em> Center-positive polarity matches the planned power-input configuration.<br></em> Right-angle plug reduces the amount of space required behind the PCB enclosure.<br><em> Universal 100 V to 240 V AC input.<br></em> Level VI efficiency rating.<br>* Active component with good DigiKey availability.</td>
+<td>* Provides more current capability than the circuit normally requires.<br><em> Right-angle connector may be less convenient depending on the enclosure and barrel-jack location.<br></em> Slightly more expensive than Option 2.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../16-00134.png" data-desc-position="bottom"><img alt="" src="../16-00134.png"></a><br><strong>Option 2</strong><br>16-00134<br>Tensility<br>9 V / 2 A AC/DC Wall Adapter<br>18 W<br>5.5 mm OD / 2.1 mm ID Straight Barrel Plug<br><a href="https://www.digikey.com/en/products/detail/tensility/16-00134/10324425">DigiKey Product Page</a></td>
+<td>* Provides the required 9 V DC output.<br><em> 2 A maximum output provides sufficient current margin for the motor and supporting electronics.<br></em> 5.5 mm OD by 2.1 mm ID connector directly matches the selected PJ-202A barrel jack.<br><em> Center-positive polarity matches the planned power-input configuration.<br></em> Straight barrel plug provides a simple and conventional connection.<br><em> Universal 100 V to 240 V AC input.<br></em> Level VI efficiency rating.<br><em> Active component with good DigiKey availability.<br></em> Slightly less expensive than Option 1.</td>
+<td>* Straight barrel plug extends farther outward than a right-angle connector.<br><em> Provides more maximum current than the circuit normally requires.<br></em> External wall adapter adds to the overall system cost.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../WSU090-2000.png" data-desc-position="bottom"><img alt="" src="../WSU090-2000.png"></a><br><strong>Option 3</strong><br>WSU090-2000<br>Triad Magnetics<br>9 V / 2 A AC/DC Wall Adapter<br>18 W<br>5.5 mm OD / 2.1 mm ID Barrel Plug<br><a href="https://www.digikey.com/en/products/detail/triad-magnetics/WSU090-2000/3094951">DigiKey Product Page</a></td>
+<td>* Provides the required 9 V DC output.<br><em> 2 A maximum output provides sufficient current margin for the system.<br></em> 5.5 mm OD by 2.1 mm ID connector matches the selected PJ-202A barrel jack.<br><em> Center-positive polarity is compatible with the planned power-input configuration.<br></em> Wide AC input-voltage range.<br><em> Longer output cable provides additional installation flexibility.<br></em> Level VI efficiency rating.<br>* Active product with good DigiKey availability.</td>
+<td>* More expensive than the Tensility alternatives.<br><em> Provides no significant electrical advantage for this application.<br></em> Longer cable may be unnecessary for the subsystem.<br>* Provides more maximum current than the circuit normally requires.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 2: Tensility 16-00134</p>
+<p><strong>Rationale:</strong> The Tensility 16-00134 was selected because it provides the required regulated 9 V DC output with a maximum current capability of 2 A, providing sufficient current margin for the DC motor and supporting electronics. Its center-positive 5.5 mm outer-diameter by 2.1 mm inner-diameter barrel connector directly matches the selected PJ-202A DC barrel jack. The straight barrel plug provides a simple and conventional connection to the subsystem. Compared with the other options, the 16-00134 provides the required electrical performance, connector compatibility, active availability, and reasonable cost without providing unnecessary power capacity.</p>
 
 
 
