@@ -36,4 +36,3 @@ The following Bill of Materials contains the components required for the pressur
 
 **Estimated Total Cost: $54.62**
 
-The total represents the estimated component cost for one pressure-pad subsystem. Components sourced from the Smraza electronics kit are assigned estimated individual component costs for the Bill of Materials even though they are already available on hand. PCB fabrication, shipping, taxes, and miscellaneous wire are not included in the total.
