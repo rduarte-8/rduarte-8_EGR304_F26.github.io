@@ -603,18 +603,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Bill of Materials
     </span>
   </a>
   
@@ -818,18 +809,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Bill of Materials
     </span>
   </a>
   
@@ -861,17 +843,17 @@
   <h1>Bill of Materials</h1>
 
 <h2 id="overview">Overview</h2>
-<p>written context</p>
-<h2 id="bill-of-materials-example-as-table">Bill of Materials Example (as Table)</h2>
-<p><em>Table ##: An example of one approach to adding your BOM table to this section.</em></p>
+<p>The following Bill of Materials contains the components required for the pressure-pad subsystem. The subsystem includes the pressure sensor and signal-conditioning circuitry, PIC18F57Q43 Curiosity Nano, debug components, 5 V regulation, DC motor, H-bridge motor driver, and external 9 V power supply. Common resistors, capacitors, the LED, and pushbutton are sourced from the Smraza electronics component kit when available.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><em>Table 1: Pressure Pad Subsystem Bill of Materials</em></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;"><strong>Part Name/Description</strong></th>
-<th style="text-align: left;"><strong>Qty</strong></th>
-<th style="text-align: left;"><strong>Unit Cost</strong></th>
-<th style="text-align: left;"><strong>Total Cost</strong></th>
-<th style="text-align: left;"><strong>Manufacture</strong></th>
+<th style="text-align: center;"><strong>Qty</strong></th>
+<th style="text-align: center;"><strong>Unit Cost</strong></th>
+<th style="text-align: center;"><strong>Total Cost</strong></th>
+<th style="text-align: left;"><strong>Manufacturer</strong></th>
 <th style="text-align: left;"><strong>Manufacturer #</strong></th>
 <th style="text-align: left;"><strong>Vendor Link</strong></th>
 <th style="text-align: left;"><strong>Datasheet Link</strong></th>
@@ -880,37 +862,207 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">8-bit SIPO/SISO Shift Register, SOIC-16 package</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.49</td>
-<td style="text-align: left;">$ 0.49</td>
-<td style="text-align: left;">NXP</td>
-<td style="text-align: left;">74HC595D,112</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf">datasheet link</a></td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano Evaluation Kit</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$10.61</td>
+<td style="text-align: center;">$10.61</td>
+<td style="text-align: left;">Microchip Technology</td>
+<td style="text-align: left;">DM164150</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Data-Sheet-40002147.pdf">Datasheet</a></td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano</td>
+</tr>
+<tr>
+<td style="text-align: left;">Force Sensing Resistor</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$9.60</td>
+<td style="text-align: center;">$9.60</td>
+<td style="text-align: left;">Ohmite</td>
+<td style="text-align: left;">FSR01CE</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/ohmite/FSR01CE/9178296">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.ohmite.com/assets/docs/res_fsr.pdf">Datasheet</a></td>
+<td style="text-align: left;">R1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quad Rail-to-Rail Operational Amplifier, 14-PDIP</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.60</td>
+<td style="text-align: center;">$0.60</td>
+<td style="text-align: left;">Microchip Technology</td>
+<td style="text-align: left;">MCP6004-I/P</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf">Datasheet</a></td>
+<td style="text-align: left;">U3</td>
+</tr>
+<tr>
+<td style="text-align: left;">5 V Linear Voltage Regulator, TO-220</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$1.01</td>
+<td style="text-align: center;">$1.01</td>
+<td style="text-align: left;">onsemi</td>
+<td style="text-align: left;">MC7805CTG</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/onsemi/MC7805CTG/919333">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.onsemi.com/pdf/datasheet/mc7800-d.pdf">Datasheet</a></td>
 <td style="text-align: left;">U1</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">0.2750</td>
-<td style="text-align: left;">$2.75</td>
-<td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805F104K5RACTU</td>
-<td style="text-align: left;">PRLTA 109</td>
-<td style="text-align: left;">n/a</td>
-<td style="text-align: left;">C2, C4, C6, C7, C8, C9, C10, C11, C12, C16</td>
+<td style="text-align: left;">Quad Half-H Motor Driver, 16-PDIP</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$4.39</td>
+<td style="text-align: center;">$4.39</td>
+<td style="text-align: left;">Texas Instruments</td>
+<td style="text-align: left;">SN754410NE</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/texas-instruments/SN754410NE/380180">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.ti.com/lit/ds/symlink/sn754410.pdf">Datasheet</a></td>
+<td style="text-align: left;">U4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Brushed DC Motor, 3 V–12 V Operating Range</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$11.50</td>
+<td style="text-align: center;">$11.50</td>
+<td style="text-align: left;">Mabuchi Motor</td>
+<td style="text-align: left;">RF370CA-15370</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/mabuchi-motor/RF370CA-15370/29784566">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://product.mabuchi-motor.com/detail.html?id=78">Product Information</a></td>
+<td style="text-align: left;">J5 / Motor</td>
+</tr>
+<tr>
+<td style="text-align: left;">9 V / 2 A, 18 W AC/DC Wall Adapter</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$10.53</td>
+<td style="text-align: center;">$10.53</td>
+<td style="text-align: left;">Tensility</td>
+<td style="text-align: left;">16-00134</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/tensility/16-00134/10324425">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/tensility/16-00134/10324425">DigiKey Specifications</a></td>
+<td style="text-align: left;">External Power Supply</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.5 mm OD / 2.1 mm ID Through-Hole DC Barrel Jack</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.75</td>
+<td style="text-align: center;">$0.75</td>
+<td style="text-align: left;">Same Sky</td>
+<td style="text-align: left;">PJ-202A</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-202A/252007">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.sameskydevices.com/product/resource/pj-202a.pdf">Datasheet</a></td>
+<td style="text-align: left;">J1</td>
+</tr>
+<tr>
+<td style="text-align: left;">8-Position, 2×4, 2.54 mm Through-Hole Header</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$1.86</td>
+<td style="text-align: center;">$1.86</td>
+<td style="text-align: left;">Molex</td>
+<td style="text-align: left;">0702460801</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/molex/0702460801/760165">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/molex/0702460801/760165">DigiKey Specifications</a></td>
+<td style="text-align: left;">J2</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.5 A Time-Delay Through-Hole Fuse</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$1.78</td>
+<td style="text-align: center;">$1.78</td>
+<td style="text-align: left;">Littelfuse</td>
+<td style="text-align: left;">087501.5MXEP</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/littelfuse-inc/087501-5MXEP/2059458">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/littelfuse-inc/087501-5MXEP/2059458">DigiKey Specifications</a></td>
+<td style="text-align: left;">F1</td>
+</tr>
+<tr>
+<td style="text-align: left;">0.33 µF, 25 V Ceramic Capacitor</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.45</td>
+<td style="text-align: center;">$0.45</td>
+<td style="text-align: left;">TDK</td>
+<td style="text-align: left;">FA24X8R1E334KNU06</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/tdk/FA24X8R1E334KNU06/24632530">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/tdk/FA24X8R1E334KNU06/24632530">DigiKey Specifications</a></td>
+<td style="text-align: left;">C1</td>
+</tr>
+<tr>
+<td style="text-align: left;">1×6, 2.54 mm Through-Hole Female Header</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.79</td>
+<td style="text-align: center;">$0.79</td>
+<td style="text-align: left;">Harwin</td>
+<td style="text-align: left;">D01-9970642</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/harwin-inc/D01-9970642/3727951">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/harwin-inc/D01-9970642/3727951">DigiKey Specifications</a></td>
+<td style="text-align: left;">J4</td>
+</tr>
+<tr>
+<td style="text-align: left;">10 kΩ, 1/4 W Resistor</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: center;">$0.15</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">10 kΩ</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R2, R3, R5</td>
+</tr>
+<tr>
+<td style="text-align: left;">330 Ω, 1/4 W Resistor</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">330 Ω</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R4</td>
+</tr>
+<tr>
+<td style="text-align: left;">0.1 µF Ceramic Capacitor</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: center;">$0.30</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">0.1 µF</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C2, C3, C4, C5, C6, C7</td>
+</tr>
+<tr>
+<td style="text-align: left;">100 µF, 25 V Polarized Electrolytic Capacitor</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.10</td>
+<td style="text-align: center;">$0.10</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">100 µF / 25 V</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C8/C9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Standard LED</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: center;">$0.05</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">LED</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">D1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Momentary Tactile Pushbutton</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">$0.10</td>
+<td style="text-align: center;">$0.10</td>
+<td style="text-align: left;">Smraza Kit / Generic</td>
+<td style="text-align: left;">Pushbutton</td>
+<td style="text-align: left;">N/A - On Hand</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">SW1</td>
 </tr>
 </tbody>
 </table>
-<p>Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.</p>
-<ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
-</ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials Example (as Image)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM-Screenshot.png" data-desc-position="bottom"><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:"></a>
-<strong>Figure 2:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
+<p><strong>Estimated Total Cost: $54.62</strong></p>
+<p>The total represents the estimated component cost for one pressure-pad subsystem. Components sourced from the Smraza electronics kit are assigned estimated individual component costs for the Bill of Materials even though they are already available on hand. PCB fabrication, shipping, taxes, and miscellaneous wire are not included in the total.</p>
 
 
 
